@@ -1,0 +1,114 @@
+body {
+    background-image: url("img/pichon.png");
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /** padding: 20px; **/
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 99vh;
+    margin: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+#current-title{
+    text-align: center;
+}
+#top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#stream-container, #log-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#stream-container {
+    margin-right: 10px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+#audio-player {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#log-container {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+#playback-log {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#login-container, #upload-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#bottom{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+
+@media(max-width: 732px) {
+
+    #top {
+        display:contents;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+    }
+    
+    #stream-container, #log-container {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}

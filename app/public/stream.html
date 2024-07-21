@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Pichones</title>
+    <link rel="icon" href="icons/icon.png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav">
+
+    </div>
+    <div id="top">
+        <div id="stream-container">
+            <h1 id="current-title">Radio Pichones</h1>
+            <form id="stream-form" style="display: none;">
+                <label for="url">YouTube URL:</label>
+                <input type="text" id="url" name="url" required>
+                <button type="submit">Stream</button>
+            </form>
+            <audio controls id="audio-player"></audio>
+        </div>
+        <div id="log-container">
+            <h2>Playback Log</h2>
+            <pre id="playback-log"></pre>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="chat-container">
+            <h1 id="current-title">Chat</h1>
+            
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
